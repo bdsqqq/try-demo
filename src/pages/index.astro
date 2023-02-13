@@ -1,15 +1,48 @@
 ---
+import { tryCatch } from "@bdsqqq/try";
+
+const mockPromise = () => {
+  return new Promise<string>((resolve, _) => {
+    setTimeout(() => {
+      resolve("hello from promise");
+    }, 1000);
+  });
+};
+
+const mockPromiseThatFails = () => {
+  return new Promise<string>((_, reject) => {
+    setTimeout(() => {
+      reject("error from promise");
+    }, 1000);
+  });
+};
+
+const [data, error] = await tryCatch(mockPromise());
+const [data2, error2] = await tryCatch(mockPromiseThatFails());
+
+if (error) {
+  console.log(error);
+}
+
+if (error2) {
+  console.log(error2);
+}
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+  <body>
+    <div>
+      {data} , {error}
+    </div>
+    <div>
+      {data2}, {error2}
+    </div>
+  </body>
 </html>

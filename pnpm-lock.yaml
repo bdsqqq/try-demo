@@ -1,9 +1,11 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@bdsqqq/try': ^1.0.0
   astro: ^2.0.11
 
 dependencies:
+  '@bdsqqq/try': 1.0.0
   astro: 2.0.11
 
 packages:
@@ -322,6 +324,10 @@ packages:
       '@babel/helper-string-parser': 7.19.4
       '@babel/helper-validator-identifier': 7.19.1
       to-fast-properties: 2.0.0
+    dev: false
+
+  /@bdsqqq/try/1.0.0:
+    resolution: {integrity: sha512-N12sx/4ohXpy+Pbs1XCSYLexUxnfjwf+ZGDyPNlciV+S7MP8WygCE53cEoRvZ2oep3JqDiVO4w6D1Ef40Cz3fg==}
     dev: false
 
   /@emmetio/abbreviation/2.2.3:
