@@ -1,11 +1,11 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@bdsqqq/try': ^2.1.1
+  '@bdsqqq/try': ^2.1.2
   astro: ^2.0.11
 
 dependencies:
-  '@bdsqqq/try': 2.1.1
+  '@bdsqqq/try': 2.1.2
   astro: 2.0.14
 
 packages:
@@ -327,8 +327,8 @@ packages:
       to-fast-properties: 2.0.0
     dev: false
 
-  /@bdsqqq/try/2.1.1:
-    resolution: {integrity: sha512-bGtEAcQmxtguq+LftaiZ4fSGbqOSrK/6ov60HU0oX5YxLPhn3GoHbUdi5lworAz+Q3SfN81FB999JcUKmFHQjA==}
+  /@bdsqqq/try/2.1.2:
+    resolution: {integrity: sha512-wkmqDnEPjta+xPqJ3md8pfB/qIH4LBG9vXMKTh+aezxvi0P0j5Zo6jHYOhYcEyOoGFogQCMshdDQVZbuAQlAjw==}
     dev: false
 
   /@emmetio/abbreviation/2.2.3:
