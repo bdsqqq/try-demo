@@ -10,7 +10,7 @@
 		"astro": "astro"
 	},
 	"dependencies": {
-		"@bdsqqq/try": "^1.0.0",
+		"@bdsqqq/try": "^2.1.1",
 		"astro": "^2.0.11"
 	}
 }
