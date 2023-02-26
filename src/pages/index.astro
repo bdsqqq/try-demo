@@ -18,11 +18,15 @@ const mockPromiseThatFails = () => {
 };
 
 const [data, error] = await trytm(mockPromise());
-const [data2, error2] = await trytm(mockPromiseThatFails());
-
 if (error) {
   console.log(error);
+  return;
 }
+
+// notice how data is type of string since we made sure to handle the case where error exists
+console.log(data);
+
+const [data2, error2] = await trytm(mockPromiseThatFails());
 
 if (error2) {
   console.log(error2);
